@@ -10,6 +10,11 @@ using System.Windows.Forms;
 
 namespace CreatePassword
 {
+    /// <summary>
+    /// Generate passwords randomly.
+    /// 
+    /// https://www.ibm.com/docs/en/baw/19.x?topic=security-characters-that-are-valid-user-ids-passwords
+    /// </summary>
     public partial class FormMain : Form
     {
         public FormMain()
@@ -101,7 +106,8 @@ namespace CreatePassword
                         if (UseSymbols.Checked) { Password.Text = Password.Text + "!"; }
                         break;
                     case 12:
-                        if (UseSymbols.Checked) { Password.Text = Password.Text + "@"; }
+                        // Removed as inaproprate character to use.
+                        //if (UseSymbols.Checked) { Password.Text = Password.Text + "@"; }
                         break;
                     case 13:
                         if (UseSymbols.Checked) { Password.Text = Password.Text + "#"; }
